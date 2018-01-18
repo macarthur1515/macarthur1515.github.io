@@ -260,6 +260,9 @@ p {
    
   }
 
+  iframe, object, embed {
+    max-width: 100%;
+}
    
   /* 16x9 Aspect Ratio 
   .responsiveCal-16x9 {
