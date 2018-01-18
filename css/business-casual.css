@@ -260,15 +260,6 @@ p {
    
   }
 
-  /*Carousel responsive size*/
-
-  div.carousel slide{
-    width: 80%; /* for example */
-    margin: auto;
-}
-
-.carousel-inner > .carousel-item > img, 
-.carousel-inner > .carousel-item > a > img{
-width: 100%; /* use this, or not */
-margin: auto;
+.carousel-inner img {
+  margin: auto;
 }
