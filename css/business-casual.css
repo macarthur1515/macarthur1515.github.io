@@ -492,18 +492,21 @@ p {
 /*medium+ screen sizes*/
 @media (min-width:992px) {
     .desktop-only {
-        display:block !important;
+        visibility: visible
     }
+    .mobile-only {
+      visibility: hidden
+  }
 }
  
 /*small screen sizes*/
 
 @media (max-width: 991px) {
     .mobile-only {
-        display:block !important;
+        visibility: visible
     }
  
     .desktop-only {
-        display:none !important;
+        visibility: hidden;
     }
 }
