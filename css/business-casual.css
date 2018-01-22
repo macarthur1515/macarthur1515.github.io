@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Corben';
+  font-family: 'Ubuntu';
 }
 
 p {
@@ -28,7 +28,7 @@ p {
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Corben';
+  font-family: 'Ubuntu';
 }
 
 .site-heading .site-heading-upper {
@@ -70,7 +70,7 @@ p {
 
 #mainNav {
   background-color: rgba(0, 53, 78, 0.9); /* also changed opacity here*/
-  font-family: 'Corben';
+  font-family: 'Ubuntu';
 }
 
 #mainNav .navbar-brand {
