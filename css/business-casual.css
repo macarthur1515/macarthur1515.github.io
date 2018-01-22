@@ -486,3 +486,12 @@ p {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+
+/*make google cal change based on desktop or mobile*/
+#content-desktop {
+  display: none;
+  }
+  
+  #content-mobile {
+  display: inline;
+  }
