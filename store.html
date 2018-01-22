@@ -20,28 +20,24 @@
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
 
-    <style>
-        @media only screen and (max-width: 639px) {
-          .mobile-only {
-            visibility: visible;
-          }
-        }
-        @media only screen and (min-width: 640px) {
-          .mobile-only {
-            visibility: hidden;
-          }
-        }
+    <style type="text/css"> 
+      .mobileShow {display: none;} 
 
-        @media only screen and (max-width: 639px) {
-          .desktop-only {
-            visibility: hidden;
-          }
-        }
-        @media only screen and (min-width: 640px) {
-          .desktop-only {
-            visibility:visible;
-          }
-        }
+      /* Smartphone Portrait and Landscape */ 
+      @media only screen 
+        and (min-device-width : 320px) 
+        and (max-device-width : 480px){ 
+          .mobileShow {display: inline;}
+      }
+
+      .mobileHide { display: inline; } 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+     .mobileHide { display: none;}
+  }
     </style>
 
   </head>
@@ -83,13 +79,13 @@
 
     <!-- Google Calendar-->
 <center>
-  <div class="mobile-only">
+  <div class="mobileShow">
       <div class = "responsiveCal">
         <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petersonmacarthur%40gmail.com&amp;color=%2329527A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
   </div>
 
-  <div id="desktop-only">    
+  <div id="mobileHide">    
       <div class = "responsiveCal">
           <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petersonmacarthur%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
