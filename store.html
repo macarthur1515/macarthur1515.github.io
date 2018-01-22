@@ -24,9 +24,6 @@
         @media only screen and (max-width: 639px) {
           .mobile-only {
             visibility: visible;
-            text-align: center;
-            font-weight:bold;
-            font-size:small;
           }
         }
         @media only screen and (min-width: 640px) {
@@ -34,7 +31,18 @@
             visibility: hidden;
           }
         }
-        </style>
+
+        @media only screen and (max-width: 639px) {
+          .desktop-only {
+            visibility: hidden;
+          }
+        }
+        @media only screen and (min-width: 640px) {
+          .desktop-only {
+            visibility:visible;
+          }
+        }
+    </style>
 
   </head>
 
@@ -81,11 +89,11 @@
       </div>
   </div>
 
-<div id="desktop-only">    
-    <div class = "responsiveCal">
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petersonmacarthur%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-</div>
+  <div id="desktop-only">    
+      <div class = "responsiveCal">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petersonmacarthur%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+  </div>
 </center>
 
 <!-- THIS SECTION IS THAT WEIRD GRAND OPENING THING
