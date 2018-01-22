@@ -30,13 +30,12 @@
           .mobileShow {display: inline;}
       }
 
-      .mobileHide { display: inline; } 
+      .desktopShow { display: none; } 
 
   /* Smartphone Portrait and Landscape */ 
-  @media only screen 
-    and (min-device-width : 320px) 
-    and (max-device-width : 480px){ 
-     .mobileHide { display: none;}
+  @media only screen
+    and (min-device-width : 481px){ 
+     .desktopShow { display: inline;}
   }
     </style>
 
@@ -85,7 +84,7 @@
       </div>
   </div>
 
-  <div id="mobileHide">    
+  <div id="desktopShow">    
       <div class = "responsiveCal">
           <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petersonmacarthur%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
