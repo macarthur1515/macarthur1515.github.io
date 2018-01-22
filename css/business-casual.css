@@ -487,26 +487,3 @@ p {
   filter: alpha(opacity=100);
 }
 
-/*make google cal change based on desktop or mobile*/
-
-/*medium+ screen sizes*/
-@media (min-width:992px) {
-    .desktop-only {
-        visibility: visible
-    }
-    .mobile-only {
-      visibility: hidden
-  }
-}
- 
-/*small screen sizes*/
-
-@media (max-width: 991px) {
-    .mobile-only {
-        visibility: visible
-    }
- 
-    .desktop-only {
-        visibility: hidden;
-    }
-}
