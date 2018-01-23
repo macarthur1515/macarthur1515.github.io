@@ -26,6 +26,17 @@
   text-shadow: 2px 2px rgb(0, 0, 0);
 }
     </style>
+    
+<script>
+$(function(){
+  $(".fancy-button").mousedown(function(){
+    $(this).bind('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(){
+        $(this).removeClass('active');
+    })
+     $(this).addClass("active");
+  });
+});
+</script>
 
   </head>
 
