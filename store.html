@@ -8,31 +8,58 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>MacArthur Peterson</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nobile:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <style type="text/css"> 
+      .mobileShow {display: none;} 
+
+      /* Smartphone Portrait and Landscape */ 
+      @media only screen 
+        and (min-device-width : 320px) 
+        and (max-device-width : 600px){ 
+          .mobileShow {display: inline;}
+          .desktopShow {display: none;}
+      }
+
+      .desktopShow { display: none; } 
+
+  /* Desktop */ 
+  @media only screen
+    and (min-device-width : 600px){ 
+     .desktopShow { display: inline;}
+  }
+
+    h1 {
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+    </style>
 
   </head>
 
   <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>
-      <span class="site-heading-lower">Business Casual</span>
+      <span class="site-heading-upper text-primary mb-3">Welcome...</span>
+      <span class="site-heading-lower">MacArthur Peterson</span>
     </h1>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">MACARTHUR PETERSON</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,24 +74,40 @@
               <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Merch</a>
             </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Schedule</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Google Calendar-->
+<center>
+  <div class="mobileShow">
+      <div class = "responsiveCal">
+        <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petersonmacarthur%40gmail.com&amp;color=%2329527A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+  </div>
+
+  <div id="desktopShow">    
+      <div class = "responsiveCal">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petersonmacarthur%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+  </div>
+</center>
+
+<!-- THIS SECTION IS THAT WEIRD GRAND OPENING THING
     <section class="page-section cta">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
               <h2 class="section-heading mb-5">
-                <span class="section-heading-upper">Come On In</span>
-                <span class="section-heading-lower">We're Open</span>
+                <span class="section-heading-upper">Under Construction...</span>
+                <span class="section-heading-lower">Grand Opening to be announced...</span>
               </h2>
               <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                 <li class="list-unstyled-item list-hours-item d-flex">
@@ -93,14 +136,14 @@
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Saturday
-                  <span class="ml-auto">9:00 AM to 5:00 PM</span>
+                  <span class="ml-auto">CLOSED. SAFTB.</span>
                 </li>
               </ul>
               <p class="address mb-5">
                 <em>
-                  <strong>1116 Orchard Street</strong>
+                  <strong>1234 Rio Grande</strong>
                   <br>
-                  Golden Valley, Minnesota
+                  Austin, Texas
                 </em>
               </p>
               <p class="mb-0">
@@ -108,39 +151,40 @@
                   <em>Call Anytime</em>
                 </small>
                 <br>
-                (317) 585-8468
+                (509) 953-8343
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+  -->
+  
+    <!-- THIS SECTION SHOWED PICTURE, AN ABOUT ME AND STUFF -->
 
-    <section class="page-section about-heading">
+      <section class="page-section about-heading">
       <div class="container">
-        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <!--<img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">-->
         <div class="about-heading-content">
           <div class="row">
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                  <span class="section-heading-lower">About Our Cafe</span>
+                  <span class="section-heading-upper">Schedule a Meeting:</span>
+                  <span class="section-heading-lower">(509) 953-8343</span>
                 </h2>
-                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                <p class="mb-0">We guarantee that you will fall in
-                  <em>lust</em>
-                  with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
+               <!-- <p>Founded 2018, MacArthur Peterson</p>
+                <p class="mb-0">Paragraph 2</p>-->
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+  -->
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 small">Copyright &copy; MacArthur Peterson 2018</p>
       </div>
     </footer>
 

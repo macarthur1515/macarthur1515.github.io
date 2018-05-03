@@ -14,11 +14,29 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nobile:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <style>
+    h1 {
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+    </style>
+
+<script>
+$(function(){
+  $(".fancy-button").mousedown(function(){
+    $(this).bind('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(){
+        $(this).removeClass('active');
+    })
+     $(this).addClass("active");
+  });
+});
+</script>
 
   </head>
 
@@ -26,13 +44,13 @@
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       <span class="site-heading-upper text-primary mb-3">Welcome...</span>
-      <span class="site-heading-lower">MACARTHUR PETERSON</span>
+      <span class="site-heading-lower">MacArthur Peterson</span>
     </h1>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">MACARTHUR PETERSON</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,35 +65,72 @@
               <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Merch</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Schedule</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="page-section clearfix">
+   <section class="page-section clearfix">
       <div class="container">
         <div class="intro">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.JPG" alt="">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">AWESOME</span>
-              <span class="section-heading-lower">WORTH KNOWING</span>
+              <span class="section-heading-upper">AWESOME.</span>
+              <span class="section-heading-lower">LEGENDARY.</span>
             </h2>
-            <p class="mb-3">IT Professional. Very stable genius. All-around awesome.
+            <p class="mb-3">KARAOKE GOD.
             </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Set Up A Meeting!</a> <!-- Change the HREF Here to make the button link to my iCal -->
+            <div class="btn-custom">
+              <a href="http://www.macarthurpeterson.com/store.html" class="btn-custom active" role="button" aria-pressed="true">Check Out My Schedule</a>         </div>         
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+  <!-- An attempt at image hover effects:
+
+    <section class="page-section clearfix">
+      <div class="container">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.JPG" alt="">
+            <div class="overlay">
+                <h2>Click to Connect With Me!</h2>
+                <div class="rotate">
+                    <p class="group1">
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </p>
+                        <hr>
+                        <hr>
+                    <p class="group2">
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </p>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+  -->
 
+<!--"My Promise to you - expectations exceeded container"
     <section class="page-section cta">
       <div class="container">
         <div class="row">
@@ -91,10 +146,54 @@
         </div>
       </div>
     </section>
+  -->
+
+  <!--Modal Contact Form Code
+
+  <a href="#contact" data-toggle="modal" class="navbar-text">Contact</a>
+
+<div class="modal fade" id="contact" role="dialog">
+    	<div class="modal-dialog">
+        	<div class="modal-content">
+            	<form id="contact-form" class="form-horizontal ajax" role="form" action="" method="post">
+                    
+                    <div class="modal-header">
+                        <h4>Contact Me <a class="close" data-dismiss="modal">x</a></h4>
+                        
+                    </div>
+                    <div id="form-alert" class="alert alert-success">Thank You for your message.  I will reply as soon as possible.</div>
+                    <div class="modal-body" id="modal-body-id">
+                        
+                        <div class="form-group">
+                        	
+                            <label for="contact-email" class="col-sm-2 control-label">E-mail:</label>
+                            <div class="col-sm-10">
+                            	<input type="email" name="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        	<label for="contact-msg" class="col-sm-2 control-label">Message:</label>
+                            <div class="col-sm-10">
+                            	<textarea name="message" placeholder="Type your message..." id="contact-message" class="form-control" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                        <button class="btn btn-primary" id="new-message" type="reset">New Message</button>
+                        <button class="btn btn-primary" value="1" name="submit" type="submit" id="submit">Send Message</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>    
+    </div>
+  -->
+
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; MacArthur Peterson 2017</p>
+        <p class="m-0 small">Copyright &copy; MacArthur Peterson 2018</p>
       </div>
     </footer>
 
