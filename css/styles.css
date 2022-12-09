@@ -11415,10 +11415,10 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 5rem;
+    font-size: 3.3rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 @media (min-width: 1200px) {
